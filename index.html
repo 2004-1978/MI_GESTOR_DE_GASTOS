@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Gestor De Gastos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs"></div>
+    
+    <div class="container animate__animated animate__fadeInDown">
+        <header>
+            <h1><center>Gestor De Gastos</center></h1>
+            <div class="balance-card">
+                <p>Balance Disponible</p>
+                <h2 id="balance">$ 0.00</h2>
+            </div>
+        </header>
+
+        <form id="exp-form">
+            <div class="input-group">
+                <input type="text" id="text" placeholder="¿En qué gastaste?" required>
+                <input type="number" id="amount" placeholder="0.00" step="0.01" required>
+            </div>
+            <button class="btn-glow">Registrar Movimiento</button>
+        </form>
+
+        <div class="history-section">
+            <h3>Historial de Movimientos</h3>
+            <ul id="list" class="list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
